@@ -261,10 +261,10 @@ const NewNavbar = () => {
                             </div>
                         </div>
                     </ul>
-                    <span className='text-sm px-3 py-2 flex justify-center items-center rounded-full border-2 border-gray-600 '>
+                    <span className='text-sm px-3 py-2 flex justify-center items-center rounded-full border-2 border-gray-600 cursor-pointer '>
                         Get A Demo
                     </span>
-                    <span className=' text-sm px-3 py-2 flex justify-center items-center rounded-full bg-[#8624e1] text-white'>
+                    <span className=' text-sm px-3 py-2 flex justify-center items-center rounded-full bg-[#8624e1] text-white cursor-pointer'>
                         Start bFree Trail
                     </span>
                 </div>

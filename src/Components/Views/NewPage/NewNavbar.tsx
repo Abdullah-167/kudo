@@ -4,7 +4,9 @@ import React, { useState, useRef } from 'react';
 import { BiMenu } from 'react-icons/bi';
 import { FaCross, FaHamburger } from 'react-icons/fa';
 import { RxCross1 } from 'react-icons/rx';
+import { FiArrowUpRight } from 'react-icons/fi';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+
 
 const NewNavbar = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
@@ -35,12 +37,12 @@ const NewNavbar = () => {
                     </Link>
                 </div>
                 <div
-                    className=" hidden lg:flex justify-between gap-5 cursor-pointer"
+                    className=" hidden lg:flex justify-between gap-5 "
                     onMouseLeave={handleCloseDropdown}
                 >
                     {links.map((item, index) => (
                         <div
-                            className='flex gap-10 items-center text-lg'
+                            className='flex gap-10 items-center text-lg cursor-pointer z-[1000]'
                             key={index}
                             onMouseEnter={() => handleHover(item.link)}
                         >
@@ -49,21 +51,21 @@ const NewNavbar = () => {
                     ))}
                     <ul
                         ref={solutionsDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-b-lg `}
+                        className={`absolute inset-x-0 w-full top-[40px] min-h-[420px] max-h-[420px] pt-14 z-20  rounded-b-lg `}
                         style={{
-                            background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
+                            background: `linear-gradient(to bottom, transparent 60px, #fff 40px)`,
                             display: activeDropdown === 'Solutions' ? 'block' : 'none',
                         }}
                     >
-                        <div className='flex justify-between gap-6 container relative'>
-                            <div>
+                        <div className=' grid grid-cols-3 gap-5 relative'>
+                            <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
                                 {fistImage.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
                                         <div className='pb-10'>
                                             {item.innerData.map((newItem, idx) => {
                                                 return (
-                                                    <div className='flex gap-2 items-center max-w-[300px] font-normal pb-5 cursor-pointer'
+                                                    <div className='flex gap-6 items-center max-w-[300px] font-normal pb-5 cursor-pointer'
                                                         key={idx}
                                                     >
                                                         <Image src={newItem.img} alt={'images'} width={55} height={55} />
@@ -72,11 +74,14 @@ const NewNavbar = () => {
                                                 )
                                             })}
                                         </div>
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
+                                        <div className='flex gap-1 items-center  cursor-pointer absolute bottom-4'>
+                                            <span>{item.btn}</span>
+                                            <span className=' font-semibold pt-1'><FiArrowUpRight /></span>
+                                        </div>
                                     </div>
                                 ))}
                             </div>
-                            <div>
+                            <div className='px-2 pt-[44px]'>
                                 {text.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -89,11 +94,13 @@ const NewNavbar = () => {
                                                 </div>
                                             )
                                         })}
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
-                                    </div>
+                                        <div className='flex gap-1 items-center  cursor-pointer absolute bottom-4'>
+                                            <span>{item.btn}</span>
+                                            <span className=' font-semibold pt-1'><FiArrowUpRight /></span>
+                                        </div>                                    </div>
                                 ))}
                             </div>
-                            <div>
+                            <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
                                 {integrations.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -108,22 +115,24 @@ const NewNavbar = () => {
                                                 )
                                             })}
                                         </div>
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
-                                    </div>
+                                        <div className='flex gap-1 items-center  cursor-pointer absolute bottom-4'>
+                                            <span>{item.btn}</span>
+                                            <span className=' font-semibold pt-1'><FiArrowUpRight /></span>
+                                        </div>                                    </div>
                                 ))}
                             </div>
                         </div>
                     </ul>
                     <ul
                         ref={resourcesDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-b-lg `}
+                        className={`absolute inset-x-0 w-full top-[40px] min-h-[420px] max-h-[420px] h-full pt-14 z-20  rounded-b-lg `}
                         style={{
-                            background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
+                            background: `linear-gradient(to bottom, transparent 60px, #fff 40px)`,
                             display: activeDropdown === 'Resources' ? 'block' : 'none', // Set display based on activeDropdown state
                         }}
                     >
-                        <div className='flex justify-between gap-6 container relative'>
-                            <div>
+                        <div className=' grid grid-cols-3 gap-5 relative h-full'>
+                            <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
                                 {secDrop2One.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -138,11 +147,10 @@ const NewNavbar = () => {
                                                 )
                                             })}
                                         </div>
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
                                     </div>
                                 ))}
                             </div>
-                            <div>
+                            <div className='px-5 pt-[44px]'>
                                 {secDrop2Two.map((item, index) => (
                                     <div key={index} className=''>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -155,11 +163,13 @@ const NewNavbar = () => {
                                                 </div>
                                             )
                                         })}
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
-                                    </div>
+                                        <div className='flex gap-1 items-center  cursor-pointer absolute bottom-4'>
+                                            <span>{item.btn}</span>
+                                            <span className=' font-semibold pt-1'><FiArrowUpRight /></span>
+                                        </div>                                    </div>
                                 ))}
                             </div>
-                            <div>
+                            <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
                                 {secDrop2Three.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -174,7 +184,10 @@ const NewNavbar = () => {
                                                 )
                                             })}
                                         </div>
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
+                                        <div className='flex gap-1 items-center  cursor-pointer absolute bottom-4'>
+                                            <span>{item.btn}</span>
+                                            <span className=' font-semibold pt-1'><FiArrowUpRight /></span>
+                                        </div>
                                     </div>
                                 ))}
                             </div>
@@ -182,14 +195,14 @@ const NewNavbar = () => {
                     </ul>
                     <ul
                         ref={aboutDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-b-lg `}
+                        className={`absolute inset-x-0 w-full top-[40px] min-h-[420px] max-h-[420px] h-full pt-14 z-20  rounded-b-lg `}
                         style={{
-                            background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
+                            background: `linear-gradient(to bottom, transparent 60px, #fff 40px)`,
                             display: activeDropdown === 'About' ? 'block' : 'none',
                         }}
                     >
-                        <div className='flex justify-between gap-6 container relative'>
-                            <div>
+                        <div className=' grid grid-cols-3 gap-5 relative h-full'>
+                        <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
                                 {secDrop3One.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -208,7 +221,7 @@ const NewNavbar = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div>
+                            <div className='px-5 pt-[44px]'>
                                 {secDrop3Two.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -227,7 +240,7 @@ const NewNavbar = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div>
+                            <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
                                 {secDrop3Three.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>

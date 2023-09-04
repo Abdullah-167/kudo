@@ -49,7 +49,7 @@ const NewNavbar = () => {
                     ))}
                     <ul
                         ref={solutionsDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] pt-6 z-20 py-2 rounded-lg shadow-xl`}
+                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-lg shadow-xl`}
                         style={{
                             background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                             display: activeDropdown === 'Solutions' ? 'block' : 'none',
@@ -116,7 +116,7 @@ const NewNavbar = () => {
                     </ul>
                     <ul
                         ref={resourcesDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] pt-6 z-20 py-8 rounded-lg shadow-xl`}
+                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-lg shadow-xl`}
                         style={{
                             background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                             display: activeDropdown === 'Resources' ? 'block' : 'none', // Set display based on activeDropdown state
@@ -182,7 +182,7 @@ const NewNavbar = () => {
                     </ul>
                     <ul
                         ref={aboutDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] pt-6 z-20 py-2 rounded-lg shadow-xl`}
+                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-lg shadow-xl`}
                         style={{
                             background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                             display: activeDropdown === 'About' ? 'block' : 'none',
@@ -267,7 +267,7 @@ const NewNavbar = () => {
                     )
                     }
                 </span>
-                <div className={` absolute z-[500] py-8 transition-all min-h-[370px] top-[105px] duration-700 bg-white max-w-[300px] sm:max-w-[400px] px-10 text-black w-full ${handleNav ? ' translate-x-[140px] opacity-100 ' : '  translate-x-[1000px] opacity-0'}`}>
+                <div className={` absolute z-[500] py-8 transition-all min-h-[370px] top-[105px] duration-700 bg-white max-w-[300px] sm:max-w-[400px] px-10 text-black w-full ${handleNav ? ' -translate-x-[20px] opacity-100 ' : '  -translate-x-[1000px] opacity-0'}`}>
                     {handleNav && (
                         <div
                             className=" flex flex-col justify-between gap-5 cursor-pointer"
@@ -351,7 +351,7 @@ const NewNavbar = () => {
                             </ul>
                             <ul
                                 ref={resourcesDropdownRef}
-                                className={`absolute inset-x-0 w-full top-[100px] pt-6 z-20 py-8 rounded-lg shadow-xl`}
+                                className={`absolute inset-x-0 w-full top-[100px] pt-6 z-20 py-8 overflow-hidden rounded-lg shadow-xl`}
                                 style={{
                                     background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                                     display: activeDropdown === 'Resources' ? 'block' : 'none', // Set display based on activeDropdown state
@@ -417,7 +417,7 @@ const NewNavbar = () => {
                             </ul>
                             <ul
                                 ref={aboutDropdownRef}
-                                className={`absolute inset-x-0 w-full top-[150px] pt-6 z-20 py-2 rounded-lg shadow-xl`}
+                                className={`absolute inset-x-0 w-full top-[150px] pt-6 z-20 overflow-hidden py-2 rounded-lg shadow-xl`}
                                 style={{
                                     background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                                     display: activeDropdown === 'About' ? 'block' : 'none',
@@ -644,11 +644,8 @@ const secDrop2Three = [
         innerData: [
             {
                 video: (
-                    <div className="max-w-[300px]  ">
-                        <LiteYouTubeEmbed
-                            id="K1xWE4MdmTY"
-                            title='rafiky'
-                        />
+                    <div className="max-w-[150px] sm:max-w-full">
+                        <iframe src="https://www.youtube.com/embed/K1xWE4MdmTY?si=FHnFMF9gY7VPhytM" />
                     </div>
                 ),
             },
@@ -705,11 +702,8 @@ const secDrop3Three = [
         innerData: [
             {
                 video: (
-                    <div className="w-72 ">
-                        <LiteYouTubeEmbed
-                            id="K1xWE4MdmTY"
-                            title='rafiky'
-                        />
+                    <div className="max-w-[150px] sm:max-w-full">
+                        <iframe src="https://www.youtube.com/embed/K1xWE4MdmTY?si=FHnFMF9gY7VPhytM" />
                     </div>
                 ),
             },

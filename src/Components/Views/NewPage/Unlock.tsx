@@ -10,8 +10,8 @@ const Unlock = () => {
                 <div className='flex flex-wrap md:flex-nowrap justify-center gap-10'>
                     {data.map((item, index) => {
                         return (
-                            <div className='border px-2 pt-2 pb-6 rounded-md shadow-sm' key={index}>
-                                <Image className='pb-5' src={item.img} alt={'cards-img'} width={500} height={500} />
+                            <div className='card-shadow border px-4 pt-2 pb-6 rounded-md' key={index}>
+                                <Image className='pb-5 rounded-t-md' src={item.img} alt={'cards-img'} width={500} height={500} />
                                 <h2 className='text-2xl font-semibold pb-3'>{item.heading}</h2>
                                 <p className=' font-medium pb-10'>{item.para}</p>
                                 <span className=' font-medium text-[#8624E1] border-b-2 border-b-[#8624E1] hover:border-black hover:text-black duration-500 cursor-pointer'>

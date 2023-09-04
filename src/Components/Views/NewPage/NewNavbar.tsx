@@ -217,7 +217,6 @@ const NewNavbar = () => {
                                                 )
                                             })}
                                         </div>
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
                                     </div>
                                 ))}
                             </div>
@@ -236,7 +235,6 @@ const NewNavbar = () => {
                                                 )
                                             })}
                                         </div>
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
                                     </div>
                                 ))}
                             </div>
@@ -257,7 +255,6 @@ const NewNavbar = () => {
                                                 )
                                             })}
                                         </div>
-                                        <span className=' absolute bottom-4 cursor-pointer'>{item.btn}</span>
                                     </div>
                                 ))}
                             </div>

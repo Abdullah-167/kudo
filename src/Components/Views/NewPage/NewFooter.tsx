@@ -25,7 +25,7 @@ const NewFooter = () => {
                                         <p className=' font-semibold text-lg pb-5'>  {item.mainHeading} </p>
                                         {item.innerSec.map((newitem, idx) => {
                                             return (
-                                                <div>
+                                                <div key={idx}>
                                                     <span className=' text-sm flex flex-col cursor-pointer pb-1' key={idx}>
                                                         {newitem.text}
                                                     </span>

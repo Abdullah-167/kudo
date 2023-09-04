@@ -49,7 +49,7 @@ const NewNavbar = () => {
                     ))}
                     <ul
                         ref={solutionsDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-lg shadow-xl`}
+                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-b-lg `}
                         style={{
                             background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                             display: activeDropdown === 'Solutions' ? 'block' : 'none',
@@ -116,7 +116,7 @@ const NewNavbar = () => {
                     </ul>
                     <ul
                         ref={resourcesDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-lg shadow-xl`}
+                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-b-lg `}
                         style={{
                             background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                             display: activeDropdown === 'Resources' ? 'block' : 'none', // Set display based on activeDropdown state
@@ -182,7 +182,7 @@ const NewNavbar = () => {
                     </ul>
                     <ul
                         ref={aboutDropdownRef}
-                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-lg shadow-xl`}
+                        className={`absolute inset-x-0 w-full top-[64px] min-h-[370px] pt-10 z-20 py-2 rounded-b-lg `}
                         style={{
                             background: `linear-gradient(to bottom, transparent 10px, #fff 30px)`,
                             display: activeDropdown === 'About' ? 'block' : 'none',

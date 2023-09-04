@@ -150,7 +150,7 @@ const NewNavbar = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className='px-5 pt-[44px]'>
+                            <div className='px-2 pt-[44px]'>
                                 {secDrop2Two.map((item, index) => (
                                     <div key={index} className=''>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -202,7 +202,7 @@ const NewNavbar = () => {
                         }}
                     >
                         <div className=' grid grid-cols-3 gap-5 relative h-full'>
-                        <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
+                            <div className='bg-[#8624e1] bg-opacity-10 px-5 pt-[44px]'>
                                 {secDrop3One.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -221,7 +221,7 @@ const NewNavbar = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className='px-5 pt-[44px]'>
+                            <div className='px-2 pt-[44px]'>
                                 {secDrop3Two.map((item, index) => (
                                     <div key={index}>
                                         <h2 className='text-2xl pb-6 font-semibold'>{item.mainHeading}</h2>
@@ -280,7 +280,7 @@ const NewNavbar = () => {
                     )
                     }
                 </span>
-                <div className={` absolute z-[500] py-8 transition-all min-h-[370px] top-[105px] duration-700 bg-white max-w-[300px] sm:max-w-[400px] px-10 text-black w-full ${handleNav ? ' -translate-x-[20px] opacity-100 ' : '  -translate-x-[1000px] opacity-0'}`}>
+                <div className={` absolute z-[500] py-8 transition-all min-h-[370px] top-[105px] duration-700 bg-white max-w-[300px] sm:max-w-[400px] h-full  px-10 text-black w-full ${handleNav ? ' -translate-x-[20px] opacity-100 ' : '  -translate-x-[1000px] opacity-0'}`}>
                     {handleNav && (
                         <div
                             className=" flex flex-col justify-between gap-5 cursor-pointer"

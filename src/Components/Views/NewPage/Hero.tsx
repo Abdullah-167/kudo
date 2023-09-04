@@ -19,10 +19,10 @@ const Hero = () => {
                                 Why use cumbersome hardware when technology allows us to obtain superior quality with just a few clicks? Try Rafiky software for remote interpreting . You will simply need a laptop and a smartphone (or tablet).   </p>
                         </div>
                         <div className="flex item-center flex-wrap md:flex-nowrap gap-x-5  gap-y-3">
-                            <span className="border border-white  bg-white px-5 rounded-full py-2 cursor-pointer">
+                            <span className="border border-white  bg-white px-5 rounded-full py-2 cursor-pointer flex justify-center items-center min-w-[230px] max-w-[230px]">
                                 Get A Quote
                             </span>
-                            <span className=" border-2 border-white px-5 rounded-full py-2 text-white cursor-pointer">
+                            <span className=" border-2 border-white px-5 rounded-full py-2 text-white cursor-pointer flex justify-center items-center min-w-[230px] max-w-[230px]">
                                 Watch Introduction
                             </span>
                         </div>

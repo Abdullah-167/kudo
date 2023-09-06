@@ -15,7 +15,7 @@ const WhyUs = () => {
                                 <div>
                                     <h3 className='text-xl font-semibold pb-2'>{item.heading}</h3>
                                     <div className='w-20 h-[2px] bg-[#8624e1] mb-3'></div>
-                                    <p className=' font-semibold'>{item.para}</p>
+                                    <p className='font-poppins font-semibold'>{item.para}</p>
                                 </div>
                             </div>
                         )

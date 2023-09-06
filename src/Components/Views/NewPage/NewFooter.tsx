@@ -7,6 +7,7 @@ import { BsYoutube } from 'react-icons/bs'
 import { FaFacebookF } from 'react-icons/fa'
 import { GrLinkedinOption } from 'react-icons/gr'
 import { IoLogoInstagram } from 'react-icons/io5'
+import { FiSend } from 'react-icons/fi'
 
 
 
@@ -40,7 +41,7 @@ const NewFooter = () => {
                             <h2 className='text-lg pb-2 font-semibold'>Subscribe</h2>
                             <div className='flex items-center mb-4 cursor-pointer'>
                                 <input className='py-1.5 w-full bg-white border-blue-800 border px-2 outline-none rounded-l-md' placeholder='Email Address*' />
-                                <span className='text-2xl bg-blue-500 text-white flex justify-center items-center px-2 rounded-r-md py-[7.5px]'> <BiRightArrow /> </span>
+                                <span className='text-lg bg-[#8624e1] text-white flex justify-center items-center px-2 rounded-r-md py-[10px]'> <FiSend /> </span>
                             </div>
                             <p className='text-sm'>Our team is happy to answer your requests. Fill out the form and we will contact you in 15 minutes!</p>
                         </div>

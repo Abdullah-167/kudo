@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,10 @@
   box-sizing: border-box;
 }
 
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
   overflow-x: hidden;
@@ -55,5 +60,3 @@ body {
 .card-shadow {
   box-shadow: 0 1px 6px 0 hsl(0 0% 89% / 50%);
 }
-
-

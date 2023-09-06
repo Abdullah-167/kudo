@@ -15,21 +15,21 @@ const Tab = () => {
         },
         {
             id: 2,
-            btnHeading: 'Click Me',
+            btnHeading: 'Presentation',
             mainHeading: 'Hello Two',
             subHeading: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sit laudantium dolores omnis veritatis ipsum eius reprehenderit inventore voluptatem numquam!',
             img: '/newimg.jpg',
         },
         {
             id: 3,
-            btnHeading: 'Click Me',
+            btnHeading: 'Who We Are',
             mainHeading: 'Hello Three',
             subHeading: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sit laudantium dolores omnis veritatis ipsum eius reprehenderit inventore voluptatem numquam!',
             img: '/newimg.jpg',
         },
         {
             id: 4,
-            btnHeading: 'Click Me',
+            btnHeading: 'Our Services',
             mainHeading: 'Hello Four',
             subHeading: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sit laudantium dolores omnis veritatis ipsum eius reprehenderit inventore voluptatem numquam!',
             img: '/newimg.jpg',
@@ -48,12 +48,12 @@ const Tab = () => {
                             return (
                                 <div key={index}>
                                     <div
-                                        className={`px-6 py-2 mb-14 rounded-full cursor-pointer text-center shadow-lg ${activeTab === item.id ? "bg-black" : " bg-transparent text-black"
+                                        className={`px-6 py-2 mb-14 rounded-full cursor-pointer text-center shadow-lg min-w-[150px] ${activeTab === item.id ? "bg-black" : " bg-transparent text-black"
                                             }`}
                                         onClick={() => setActiveTab(item.id)}
                                     >
                                         <h1
-                                            className={` whitespace-nowrap text-sm ${activeTab === item.id ? "text-white" : "text-indigo-700"
+                                            className={` whitespace-nowrap text-sm ${activeTab === item.id ? "text-white" : "text-[#8624e1]"
                                                 }`}
                                         >
                                             {item.btnHeading}
@@ -74,7 +74,7 @@ const Tab = () => {
                                                 <h2 className="text-3xl font-medium pb-5">
                                                     {item.mainHeading}
                                                 </h2>
-                                                <p className="text-lg font-normal leading-8 md:pb-10">
+                                                <p className="font-poppins text-lg font-normal leading-8 md:pb-10">
                                                     {item.subHeading}
                                                 </p>
                                             </div>

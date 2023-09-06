@@ -30,10 +30,10 @@ const Hero = () => {
                     <div className="mx-auto md:w-[500px] mt-10 sm:mt-20  md:h-[600px] overflow-hidden relative">
                         <Image
                             className="image"
-                            src={"/laugh.webp"}
+                            src={"/hero-mai.svg"}
                             alt={'Image'}
-                            width={450}
-                            height={450}
+                            width={500}
+                            height={500}
                             blurDataURL={"/laugh.webp"}
                             loading="lazy"
                         />

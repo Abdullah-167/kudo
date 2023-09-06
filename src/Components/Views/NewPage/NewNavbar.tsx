@@ -43,7 +43,7 @@ const NewNavbar = () => {
                 >
                     {links.map((item, index) => (
                         <div
-                            className='flex gap-10 items-center text-lg cursor-pointer z-[1000]'
+                            className='flex gap-10 items-center text-lg cursor-pointer z-[1000] hover:text-[#8624e1] border-b-2 border-b-transparent hover:border-b-[#8624e1] transition-all duration-500'
                             key={index}
                             onMouseEnter={() => handleHover(item.link)}
                         >

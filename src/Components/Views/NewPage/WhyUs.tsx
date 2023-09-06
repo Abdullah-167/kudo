@@ -31,32 +31,32 @@ export default WhyUs;
 
 const data = [
     {
-        imge: '/1x.webp',
+        imge: '/text.svg',
         heading: ' Language delivery',
         para: `Our RSI platform can support up to 100 languages and 400 interpreters per event and deliver interpretation to any event setup. `
     },
     {
-        imge: '/2x.webp',
+        imge: '/headphone.svg',
         heading: ' Language delivery',
         para: `Our RSI platform can support up to 100 languages and 400 interpreters per event and deliver interpretation to any event setup. `
     },
     {
-        imge: '/3x.webp',
+        imge: '/box.svg',
         heading: ' Language delivery',
         para: `Our RSI platform can support up to 100 languages and 400 interpreters per event and deliver interpretation to any event setup. `
     },
     {
-        imge: '/4x.webp',
+        imge: '/handle.svg',
         heading: ' Language delivery',
         para: `Our RSI platform can support up to 100 languages and 400 interpreters per event and deliver interpretation to any event setup. `
     },
     {
-        imge: '/5x.webp',
+        imge: '/hand.svg',
         heading: ' Language delivery',
         para: `Our RSI platform can support up to 100 languages and 400 interpreters per event and deliver interpretation to any event setup. `
     },
     {
-        imge: '/6x.webp',
+        imge: '/security.svg',
         heading: ' Language delivery',
         para: `Our RSI platform can support up to 100 languages and 400 interpreters per event and deliver interpretation to any event setup. `
     },

@@ -30,17 +30,17 @@ export default Speaking;
 
 const data = [
     {
-        img: '/newbanner.webp',
+        img: '/banner.svg',
         number: '50,000',
         text: 'successful events'
     },
     {
-        img: '/location.webp',
+        img: '/location.svg',
         number: '28',
         text: 'countries on the team'
     },
     {
-        img: '/settings.webp',
+        img: '/settings.svg',
         number: '72',
         text: 'event platform integrations'
     },

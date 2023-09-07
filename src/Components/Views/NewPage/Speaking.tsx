@@ -29,18 +29,23 @@ export default Speaking;
 
 const data = [
     {
-        img: '/banner.svg',
+        img: '/xl.svg',
         number: '50,000',
-        text: 'successful events'
+        text: '100% customisable platform'
     },
     {
-        img: '/location.svg',
+        img: '/x2.svg',
         number: '28',
-        text: 'countries on the team'
+        text: '4.7/5 Reviews.io        '
     },
     {
-        img: '/settings.svg',
+        img: '/x3.svg',
         number: '72',
-        text: 'event platform integrations'
+        text: 'interpreter 10+ years experience         '
+    },
+    {
+        img: '/x4.svg',
+        number: '72',
+        text: 'ISO Certified platform'
     },
 ]
